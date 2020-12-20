@@ -1,0 +1,57 @@
+
+
+.spinner-wrapper {
+    display: none;
+}
+
+.name  {
+    background-color:#dbdbdb;
+    padding: 5px;
+    font-family: calibri;
+
+}
+
+.ratings  {
+    background-color:#dbdbdb;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: calibri;
+
+}
+
+.tags  {
+    background-color:#dbdbdb;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: calibri;
+
+}
+
+.spinner {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+
+  .spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #000 transparent #000 transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+
+ 
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
